@@ -4,29 +4,35 @@ layout: default
 
 <!-- Insert masthead image here -->
 <div class="masthead"></div>
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+<section class="posts container">
 
   <ul class="post-list">
+    
     {% for post in site.posts %}
       <li>
-        
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         
+        
         {% if post.image %}
-        <img src="{{ post.image }}"></img>
-        {% else %}
+          <img src="{{ post.image }}"></img>
+          {% else %}
         {% endif %}
         
+        <p class="post-description">{{ post.description | truncatewords: 24 }}</p>
+        <a class="button" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+        
       </li>
+      
+      <hr>
+      
     {% endfor %}
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</div>
+</section>
