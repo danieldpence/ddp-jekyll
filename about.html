@@ -1,0 +1,36 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+<section>
+    <h1>About</h1>
+    <p>Daniel Pence is a front-end web developer from Nashville, TN.
+    His specialties include writing awesome markup, creating beautiful stylings,
+    and interact-i-sizing web pages with modern Javascript.</p>
+    <p>In his spare time, he enjoys spending time with his wife and toddler,
+     learning new technologies, outdoor adventures, and working on home
+     improvement projects.</p>
+    <img src="http://placehold.it/300x300">
+</section>
+
+<!--Replace me with a better form, please -->
+<section id="contact" class="contact">
+    <h2>Get In Touch</h2>
+    <p><strong>If you're interested</strong> in working together, or if you just want to say "hello", shoot me a quick email with the form below.</p>    
+    <form method="POST" action="http://formspree.io/daniel@danielpence.com">
+        <div class="user-info-group">
+            <label for="user"><span>Your name:</span>
+            <input type="text" id="user" name="name"></label>
+                              
+            <label for="email"><span>Your e-mail:</span>
+            <input type="email" id="email" name="_replyto"></label>
+
+            <input type="hidden" name="_subject" value="New submission!"/>
+            <input type="hidden" name="_next" value="#"/>
+        </div>
+            <label for="message"><span>Your message:</span>
+            <textarea id="message" name="message"></textarea></label>
+            <input type="submit" value="Send"></input>                               
+    </form> 
+</section>

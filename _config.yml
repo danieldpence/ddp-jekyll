@@ -1,5 +1,6 @@
 # Site settings
-title: Daniel Pence - Front-End Developer
+title: Daniel Pence | Front-End Developer
+logo-text: Daniel Pence
 email: daniel@danielpence.com
 description: The personal blog and portfolio of Daniel Pence, a front-end web developer from Nashville, TN.
 baseurl: "" # the subpath of your site, e.g. /blog/
