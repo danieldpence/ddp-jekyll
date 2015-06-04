@@ -3,34 +3,42 @@ layout: page
 title: About
 permalink: /about/
 ---
-<section>
-    <h1>About</h1>
-    <p>Daniel Pence is a front-end web developer from Nashville, TN.
-    His specialties include writing awesome markup, creating beautiful stylings,
-    and interact-i-sizing web pages with modern Javascript.</p>
-    <p>In his spare time, he enjoys spending time with his wife and toddler,
-     learning new technologies, outdoor adventures, and working on home
-     improvement projects.</p>
-    <img src="http://placehold.it/300x300">
+<section class="about container">
+    <div class="row">
+        <div class="seven columns u-pull-left">
+            <h1>About</h1>
+            <p>Daniel Pence is a front-end web developer from Nashville, TN.
+            His specialties include writing awesome markup, creating beautiful stylings,
+            and interact-i-sizing web pages with modern Javascript.</p>
+            <p>In his spare time, he enjoys spending time with his wife and toddler,
+            learning new technologies, outdoor adventures, and working on home
+            improvement projects.</p>
+        </div>
+        <div class="five columns u-pull-right">
+            <img src="http://placehold.it/300x300" class="u-pull-right u-max-full-width">
+        </div>
+    </div>
 </section>
 
-<!--Replace me with a better form, please -->
-<section id="contact" class="contact">
+
+<section class="contact container">
     <h2>Get In Touch</h2>
     <p><strong>If you're interested</strong> in working together, or if you just want to say "hello", shoot me a quick email with the form below.</p>    
     <form method="POST" action="http://formspree.io/daniel@danielpence.com">
-        <div class="user-info-group">
-            <label for="user"><span>Your name:</span>
-            <input type="text" id="user" name="name"></label>
-                              
-            <label for="email"><span>Your e-mail:</span>
-            <input type="email" id="email" name="_replyto"></label>
-
-            <input type="hidden" name="_subject" value="New submission!"/>
-            <input type="hidden" name="_next" value="#"/>
+        <div class="row">
+            <div class="six columns">
+                <label for="user">Your name:</label>
+                <input type="text" id="user" class="u-full-width" name="name" placeholder="Your Name">
+            </div>
+            <div class="six columns">
+                <label for="email"><span>Your e-mail:</label>
+                <input type="email" id="email" class="u-full-width" name="_replyto" placeholder="inbox@email.com">
+            </div>
         </div>
-            <label for="message"><span>Your message:</span>
-            <textarea id="message" name="message"></textarea></label>
-            <input type="submit" value="Send"></input>                               
+        <label for="message">Your message:</label>
+        <textarea id="message" name="message" class="u-full-width" placeholder="Hey dude, let's talk..."></textarea>
+        <input type="submit" value="Submit" class="button"></input>
+        <input type="hidden" name="_subject" value="New submission!"/>
+        <input type="hidden" name="_next" value="#"/>
     </form> 
 </section>

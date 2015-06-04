@@ -1,13 +1,28 @@
 # Site settings
-title: Daniel Pence | Front-End Developer
-logo-text: Daniel Pence
+title: Daniel Pence &mdash; Front End Developer
+logo-text: DP
 email: daniel@danielpence.com
-description: The personal blog and portfolio of Daniel Pence, a front-end web developer from Nashville, TN.
+description: Personal blog and portoflio of Daniel Pence, a Front End Developer from Nashville, TN.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.danielpence.com" # the base hostname & protocol for your site
-twitter_username: danieldpence
-github_username:  danieldpence
+twitter_username: danieldpence #enter twitter handle
+github_username:  danieldpence #enter github handle
+google_font: "Raleway:400,600"
+paginate: 3
+
 
 # Build settings
 markdown: kramdown
 permalink: /:title
+highlighter: pygments
+
+# Default settings
+defaults:
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            author: Daniel Pence
+            layout: "post"
+            comments: true

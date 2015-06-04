@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Welcome to Jekyll!"
 description: "In this post, we take a deep dive into the world of blah blah blah. Then we talk about the best way to skin a cat."
 date:   2015-06-01 15:51:06

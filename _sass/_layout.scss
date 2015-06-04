@@ -4,25 +4,37 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid lightgrey;
 }
 
 .site-logo {
-    font-size: 4.2rem;
+    display: inline-block;
+    background-color: $brand-color-primary;
+    color: #fff;
+    &:hover {
+        background: $brand-color-light;
+        color: #fff;
+    }
+    text-shadow: -1px 2px 3px rgba(150, 150, 150, 0.8) ;
+    font-size: 2em;
+    font-weight: 700;
     text-transform: uppercase;
-    padding-left: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 2rem;
 }
 
 .site-nav {
-    padding-right: 2rem;
+    margin-right: 2rem;
 }
 
 .page-link {
-    padding-left: 1.2rem;
+    color: $brand-color-primary;
+    padding-left: 1.2em;
     text-transform: uppercase;
-    
-    font-weight: 400;
+    font-weight: 600;
     &:hover {
-        text-decoration: underline;
+        color: $brand-color-light;
     }
 }
 
@@ -37,35 +49,127 @@
     background-size: cover;
 }
 
+.posts {
+    margin-top: 2em;
+}
+
 .post-list {
     list-style: none;
-    margin-top: 8rem;
+    
     
     li h2 {
         margin: none;
     }
     
+    .post-meta {
+        text-transform: uppercase;
+    }
+    
     .post-link, .post-meta, img, p {
         display: block;
-        margin-bottom: 1.2rem;
         max-width: 100%;
+    }
+    
+    img {
+        margin-bottom: 2rem;
     }
     
     .post-link {
         font-weight: 400;
-        color: $font-color-primary;
+        color: $brand-color-primary;
         &:hover {
             color: $font-color-muted;
         }
     }
+
+}
+
+.pagination {
+    text-align: center;
     
-    .post-description {
-        font-weight: 300;
+    a {
+        color: $brand-color-primary;
+        &:hover {
+            color: $brand-color-light;
+        }
+    }
+}
+
+
+.rss-subscribe a {
+    color: $brand-color-primary;
+    &:hover {
+        color: $brand-color-light;
+    }
+}
+
+/*----- Post Pages  -----*/
+
+.post {
+    margin: 2em auto;
+}
+
+
+/*----- About Page  -----*/
+
+.about {
+    margin: 2em auto;
+}
+
+input[type="submit"].button {
+    color: $brand-color-primary;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="submit"].button:hover,
+textarea:focus,
+select:focus {
+  border: 1px solid $brand-color-primary;
+  outline: 0;
+}
+
+
+
+
+/*----- Portfolio Page  -----*/
+
+.portfolio {
+    margin: 2em auto;
+    
+    header {
+        margin-bottom: 4em;
+    }
+    
+    h1, h2 {
+        text-align: center;
+    }
+    
+    h2 {
         font-size: 2rem;
     }
     
+    h3 {
+        font-size: 2.8rem;
+    }
     
+    li:nth-of-type(odd) h3 {
+        text-align: right;
+    }
 }
+
+.portfolio-item {
+    margin-bottom: 4em;
+}
+
+
+
+
 
 /*----- Footer  -----*/
 .icon svg {
@@ -74,5 +178,13 @@
 
 .site-footer {
     border-top: 1px solid lightgrey;
-    padding-top: 2rem;
+    padding-top: 2em;
 }
+
+footer a {
+    color: $brand-color-primary;
+    &:hover {
+        color: $brand-color-light;
+    }
+}
+

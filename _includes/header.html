@@ -1,17 +1,19 @@
+
 <header class="site-header u-full-width u-cf">
 
     <a class="site-logo" href="{{ site.baseurl }}/">{{ site.logo-text}}</a>
 
     <nav class="site-nav">
-      
-      <a class="page-link" href="{{ site.baseurl }}/">Blog</a>
-      
-      {% for page in site.pages %}
-        {% if page.title %}
-        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        {% endif %}
-      {% endfor %}
-    
+
+          <a class="page-link" href="{{ site.baseurl }}/">Blog</a>
+        
+        {% for page in site.pages %}
+        
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+
     </nav>
   
 </header>

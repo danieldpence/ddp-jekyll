@@ -1,13 +1,17 @@
 @import 
-    "normalize",
     "skeleton",
-    "fonts",
-    "colors"
+    "colors",
+    "syntax"
 ;
+
+body {
+    margin: 0;
+    background-color: #F9F9F9;
+}
 
 
 /*-------Site-Wide Styles--------*/
-a, a:visited, a:active {
+a, a:visited, a:active, a:focus, a:hover {
     text-decoration: none;
 }
 
@@ -16,19 +20,14 @@ ul {
 }
 
 /*------- Anchor and Button Colors--------*/
-a {
-    color: $brand-color-primary;
-    
-    &:hover {
-        color: $brand-color-dark;
-    }
-}
 
 .button {
     color: $brand-color-primary;
     
-    &:hover, &:focus {
-        color: $brand-color-dark;
+    &:hover {
+        color: $brand-color-light;
+        border: 1px solid $brand-color-primary;
+        outline: 0;
     }
 }
 

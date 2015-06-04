@@ -2,14 +2,24 @@
 layout: default
 ---
 <section class="post container">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
   <article class="post-content">
-    {{ content }}
-  </article>
+    
+    <header class="post-header">
+      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} &mdash; By {{ page.author }}{% endif %}</p>
+    
+      <h1 class="post-title">{{ page.title }}</h1>
+      
+      
+      {% if page.image %}
+          <img src="{{ page.image }}"></img>
+          {% else %}
+      {% endif %}
+    
+    </header>
 
+    {{ content }}
+  
+  </article>
+  {% include disqus.html disqus_identifier=page.disqus_identifier %}
+  
 </section>
