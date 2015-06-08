@@ -109,13 +109,32 @@
     margin: 2em auto;
 }
 
+.post-content {
+    
+    a {
+        color: $brand-color-primary;
+        &:hover {
+            color: $brand-color-light;
+        }
+    }
+    
+    .post-meta, h1, img {
+        margin-bottom: 2rem;
+    }
+}
+
 
 /*----- About Page  -----*/
 
 .about {
     margin: 2em auto;
+    img {
+        border-radius: 5%;
+    }
 }
+    
 
+/*--Contact Form--*/
 input[type="submit"].button {
     color: $brand-color-primary;
 }
@@ -165,6 +184,8 @@ select:focus {
 
 .portfolio-item {
     margin-bottom: 4em;
+    
+    
 }
 
 
