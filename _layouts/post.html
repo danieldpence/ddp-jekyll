@@ -3,23 +3,23 @@ layout: default
 ---
 <section class="post container">
   <article class="post-content">
-    
+
     <header class="post-header">
       <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} &mdash; By {{ page.author }}{% endif %}</p>
-    
+
       <h1 class="post-title">{{ page.title }}</h1>
-      
-      
+
+
       {% if page.image %}
-          <img src="{{ page.image }}"></img>
+          <img src="{{ page.image }}" class="u-max-full-width"></img>
           {% else %}
       {% endif %}
-    
+
     </header>
 
     {{ content }}
-  
+
   </article>
   {% include disqus.html disqus_identifier=page.disqus_identifier %}
-  
+
 </section>

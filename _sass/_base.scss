@@ -1,9 +1,3 @@
-@import 
-    "skeleton",
-    "colors",
-    "syntax"
-;
-
 body {
     margin: 0;
     background-color: #F9F9F9;
@@ -23,14 +17,10 @@ ul {
 
 .button {
     color: $brand-color-primary;
-    
+
     &:hover {
         color: $brand-color-light;
         border: 1px solid $brand-color-primary;
         outline: 0;
     }
 }
-
-
-
-

@@ -55,25 +55,25 @@
 
 .post-list {
     list-style: none;
-    
-    
+
+
     li h2 {
         margin: none;
     }
-    
+
     .post-meta {
         text-transform: uppercase;
     }
-    
+
     .post-link, .post-meta, img, p {
         display: block;
         max-width: 100%;
     }
-    
+
     img {
         margin-bottom: 2rem;
     }
-    
+
     .post-link {
         font-weight: 400;
         color: $brand-color-primary;
@@ -86,7 +86,7 @@
 
 .pagination {
     text-align: center;
-    
+
     a {
         color: $brand-color-primary;
         &:hover {
@@ -110,14 +110,14 @@
 }
 
 .post-content {
-    
+
     a {
         color: $brand-color-primary;
         &:hover {
             color: $brand-color-light;
         }
     }
-    
+
     .post-meta, h1, img {
         margin-bottom: 2rem;
     }
@@ -128,11 +128,32 @@
 
 .about {
     margin: 2em auto;
-    img {
-        border-radius: 5%;
+
+    .about-image {
+      border-radius: 5%;
+
+      /* Larger than mobile */
+      @media (min-width: 400px) {
+        display: block;
+        margin: 0 auto 1em;
+        width: 100%;
+      }
+      /* Larger than phablet */
+      @media (min-width: 550px) {
+        margin-left: 1em;
+        margin-bottom: 1em;
+        width: 300px;
+      }
+      /* Larger than tablet */
+      @media (min-width: 750px) {
+        width: 340px;
+      }
+      /* Larger than desktop */
+      @media (min-width: 1000px) {
+        width: 400px;
+      }
     }
 }
-    
 
 /*--Contact Form--*/
 input[type="submit"].button {
@@ -160,23 +181,23 @@ select:focus {
 
 .portfolio {
     margin: 2em auto;
-    
+
     header {
         margin-bottom: 4em;
     }
-    
+
     h1, h2 {
         text-align: center;
     }
-    
+
     h2 {
         font-size: 2rem;
     }
-    
+
     h3 {
         font-size: 2.8rem;
     }
-    
+
     li:nth-of-type(odd) h3 {
         text-align: right;
     }
@@ -184,8 +205,8 @@ select:focus {
 
 .portfolio-item {
     margin-bottom: 4em;
-    
-    
+
+
 }
 
 
@@ -208,4 +229,3 @@ footer a {
         color: $brand-color-light;
     }
 }
-
