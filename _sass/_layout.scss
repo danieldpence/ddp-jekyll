@@ -72,13 +72,15 @@
 
     img {
         margin-bottom: 2rem;
+        width: 100%;
+        max-height: 200px;
     }
 
     .post-link {
         font-weight: 400;
-        color: $brand-color-primary;
+        color: $font-color-muted;
         &:hover {
-            color: $font-color-muted;
+            color: $brand-color-primary;
         }
     }
 
@@ -205,8 +207,6 @@ select:focus {
 
 .portfolio-item {
     margin-bottom: 4em;
-
-
 }
 
 
