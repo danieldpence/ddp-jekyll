@@ -16,10 +16,12 @@ ul {
 /*------- Anchor and Button Colors--------*/
 
 .button {
+    border-color: $brand-color-primary;
     color: $brand-color-primary;
 
     &:hover {
-        color: $brand-color-light;
+        background-color: $brand-color-primary;
+        color: white;
         border: 1px solid $brand-color-primary;
         outline: 0;
     }
