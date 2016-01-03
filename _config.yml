@@ -16,6 +16,9 @@ markdown: kramdown
 permalink: /:title
 highlighter: pygments
 
+# Gems
+gems: [jekyll-paginate]
+
 # Default settings
 defaults:
     -
