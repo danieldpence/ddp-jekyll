@@ -4,7 +4,7 @@ date:   2015-08-04
 categories: career
 image: /img/open-road.jpg
 ---
-Hello! Welcome to my blog, I'm glad you're here. I recently changed my career, and my life, by teaching myself to code. I was able to transition from a stagnating career in finance to landing a job as a junior front end developer at an awesome company in less than 15 months. It wasn't easy, and I worked really hard to achieve my goals, but it's absolutely possible if you're willing to work for it.
+Hello! Welcome to my blog, I'm glad you're here. I recently changed my career, and my life, by teaching myself to code. I was able to transition from a stagnating career in finance to landing a job as a front end developer at an awesome company in less than 15 months. It wasn't easy, and I worked really hard to achieve my goals, but it's absolutely possible if you're willing to work for it.
 
 I thought it would be a good idea to start writing about my experience, for several reasons. First of all, it's my hope that others might find hope and inspiration as they progress in their own individual journeys. I know I always found it encouraging when I read about other people's success stories. It helped me continue to believe that achieving my goals was possible.
 

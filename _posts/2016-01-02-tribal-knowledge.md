@@ -1,6 +1,6 @@
 ---
 title:  "Tribal Knowledge"
-description: "To be truly successful at a new organization, one must keep an open ear to oft-guarded tribal knowledge."
+description: "How do you determine what is worth documenting, and how can you ensure that new developers are quickly submersed in the shared pool of undocumented knowledge?"
 categories: softskills
 image: http://lorempixel.com/g/960/200
 ---
@@ -10,4 +10,4 @@ Tribal knowledge is often referred to as any 'undocumented information that is n
 
 As developers, and an industry as a whole, I would say we do a fairly good job of documenting our work. Some would argue that well-written code is in itself, self-documenting. However, it's easy to overlook the little things and minor details in the process of documenting the larger project.
 
-As a newbie, it's important to keep your ears open in an effort to absorb as much context as possible. Always be asking questions. Next time you have to ask how to do something, make sure you ask for an explanation of why that certain thing is done that way and what the history is behind it.
+As a newbie, it's important to keep your ears open in an effort to absorb as much context as possible. Always be asking questions. Next time you have to ask how to do something, make sure you ask for an explanation of why that certain thing is done the way it is and what the history is behind it. Eventually, you will start to catch up to the collective tribal mind.
