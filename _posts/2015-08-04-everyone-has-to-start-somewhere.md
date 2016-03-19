@@ -1,8 +1,8 @@
 ---
-title:  "Everyone Has To Start Somewhere"
+heading:  "Everyone Has To Start Somewhere"
 date:   2015-08-04
 categories: career
-image: /img/open-road.jpg
+featured_image: /img/open-road.jpg
 ---
 Hello! Welcome to my blog, I'm glad you're here. I recently changed my career, and my life, by teaching myself to code. I was able to transition from a stagnating career in finance to landing a job as a front end developer at an awesome company in less than 15 months. It wasn't easy, and I worked really hard to achieve my goals, but it's absolutely possible if you're willing to work for it.
 

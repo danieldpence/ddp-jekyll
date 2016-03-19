@@ -1,9 +1,9 @@
 ---
-title:  "From Financial Analyst to Front End Web Developer: Why I Changed My Life By Learning To Code"
+heading:  "From Financial Analyst to Front End Web Developer: Why I Changed My Life By Learning To Code"
 description: "In early 2014, I started teaching myself to code, and roughly a year later I landed my first full time job as a web developer. Here's why I did it."
 categories: career
 date:   2015-08-07
-image: /img/hiyah.jpg
+featured_image: /img/hiyah.jpg
 ---
 
 It was the spring of 2014. My wife and I had just welcomed our first son to the world, and despite total sleep depravity, the 2 a.m. feedings and seemingly constant diaper changes, it was the most incredible time in my life so far. But, like many new Dads, I was beginning to feel the weight of a responsibility that far surpassed any I had ever known. I had become responsible for the well-being of another human being who physically could not take care of himself.

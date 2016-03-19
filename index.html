@@ -1,28 +1,24 @@
 ---
 layout: default
 ---
+<section class="Posts">
 
-<div class="masthead"></div>
-
-<section class="posts container">
-
-  <ul class="post-list">
+  <ul class="Post-list">
 
     {% for post in paginator.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} &mdash; By {{ post.author }}{% endif %}</span>
+      <li class="Post-listItem">
+        <p class="Post-metadata">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} &mdash; By {{ post.author }}{% endif %}</p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <h2 class="Post-heading">
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.heading }}</a>
         </h2>
 
-        {% if post.image %}
-          <img src="{{ post.image }}"></img>
-          {% else %}
+        {% if post.featured_image %}
+          <img class="Post-image--featured"src="{{ post.featured_image }}"></img>
         {% endif %}
 
-        <p class="post-description">{{ post.description }}</p>
-        <a class="button" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+        <p class="Post-description">{{ post.description }}</p>
+        <a class="Button" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
 
       </li>
 
@@ -32,11 +28,11 @@ layout: default
   </ul>
   <!-- Pagination Logic -->
     {% if paginator.total_pages > 1 %}
-      <div class="pagination">
+      <div class="Paginator">
         {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+          <a class="Paginator-prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
         {% else %}
-          <span>&laquo; Prev</span>
+          <span class="Paginator-prev">&laquo; Prev</span>
         {% endif %}
 
         {% for page in (1..paginator.total_pages) %}
@@ -50,9 +46,9 @@ layout: default
         {% endfor %}
 
         {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+          <a class="Paginator-next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
         {% else %}
-          <span>Next &raquo;</span>
+          <span class="Paginator-next">Next &raquo;</span>
         {% endif %}
       </div>
     {% endif %}

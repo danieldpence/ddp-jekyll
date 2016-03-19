@@ -1,8 +1,8 @@
 ---
-title:  "Tribal Knowledge"
+heading:  "Tribal Knowledge"
 description: "How do you determine what is worth documenting, and how can you ensure that new developers are quickly submersed in the shared pool of undocumented knowledge?"
 categories: softskills
-image: http://lorempixel.com/g/960/200
+featured_image: http://lorempixel.com/g/960/200
 ---
 Going into a new position, and a new career, I had prepared myself with the skill set that I thought would prepare me to hit the ground running from day one. I had built up my technical chops to a point where I felt I could contribute. I was confident in my ability to seek out answers to questions I would have, and my soft skills were already in a great place from my previous business experience. For the most part, I would say I was fairly well prepared. However, there was one thing I hadn't considered that I would need to keep an open ear for - _tribal knowledge_.
 
